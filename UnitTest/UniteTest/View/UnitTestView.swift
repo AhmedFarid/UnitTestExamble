@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct UnitTestView: View {
+    @StateObject private var vm: UnitTestViewModel
+
+    init(isPremium: Bool) {
+        _vm = StateObject(wrappedValue: UnitTestViewModel(isPremium: isPremium))
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(vm.isPremium.description)
     }
 }
 
 #Preview {
-    UnitTestView()
+    UnitTestView(isPremium: false)
 }

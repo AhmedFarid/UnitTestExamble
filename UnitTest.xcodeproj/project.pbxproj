@@ -11,7 +11,23 @@
 		FAADAEE52C9B1127000009F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAEE42C9B1127000009F9 /* ContentView.swift */; };
 		FAADAEE72C9B1128000009F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAADAEE62C9B1128000009F9 /* Assets.xcassets */; };
 		FAADAEEA2C9B1128000009F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAADAEE92C9B1128000009F9 /* Preview Assets.xcassets */; };
+		FAADAEF22C9B16E4000009F9 /* UnitTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAEF12C9B16E4000009F9 /* UnitTestView.swift */; };
+		FAADAEF62C9B1F6C000009F9 /* UnitTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAEF52C9B1F6C000009F9 /* UnitTestViewModel.swift */; };
+		FAADAEFE2C9B2104000009F9 /* UnitTest_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAEFD2C9B2104000009F9 /* UnitTest_Tests.swift */; };
+		FAADAF052C9B226F000009F9 /* UnitTestViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAF042C9B226F000009F9 /* UnitTestViewModel_Test.swift */; };
+		FAADAF082C9B446E000009F9 /* NewMockDataServies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAF072C9B446E000009F9 /* NewMockDataServies.swift */; };
+		FAADAF0A2C9B49F6000009F9 /* NewMockDataServies_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADAF092C9B49F6000009F9 /* NewMockDataServies_Test.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAADAEFF2C9B2104000009F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAADAED72C9B1127000009F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAADAEDE2C9B1127000009F9;
+			remoteInfo = UnitTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FAADAEDF2C9B1127000009F9 /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +35,24 @@
 		FAADAEE42C9B1127000009F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAADAEE62C9B1128000009F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAADAEE92C9B1128000009F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAADAEF12C9B16E4000009F9 /* UnitTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestView.swift; sourceTree = "<group>"; };
+		FAADAEF52C9B1F6C000009F9 /* UnitTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestViewModel.swift; sourceTree = "<group>"; };
+		FAADAEFB2C9B2103000009F9 /* UnitTest_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAADAEFD2C9B2104000009F9 /* UnitTest_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest_Tests.swift; sourceTree = "<group>"; };
+		FAADAF042C9B226F000009F9 /* UnitTestViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestViewModel_Test.swift; sourceTree = "<group>"; };
+		FAADAF072C9B446E000009F9 /* NewMockDataServies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataServies.swift; sourceTree = "<group>"; };
+		FAADAF092C9B49F6000009F9 /* NewMockDataServies_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataServies_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAADAEDC2C9B1127000009F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADAEF82C9B2103000009F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				FAADAEE12C9B1127000009F9 /* UnitTest */,
+				FAADAEFC2C9B2104000009F9 /* UnitTest_Tests */,
 				FAADAEE02C9B1127000009F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				FAADAEDF2C9B1127000009F9 /* UnitTest.app */,
+				FAADAEFB2C9B2103000009F9 /* UnitTest_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +83,7 @@
 		FAADAEE12C9B1127000009F9 /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAADAEF02C9B16C3000009F9 /* UniteTest */,
 				FAADAEE22C9B1127000009F9 /* UnitTestApp.swift */,
 				FAADAEE42C9B1127000009F9 /* ContentView.swift */,
 				FAADAEE62C9B1128000009F9 /* Assets.xcassets */,
@@ -65,6 +98,50 @@
 				FAADAEE92C9B1128000009F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAADAEF02C9B16C3000009F9 /* UniteTest */ = {
+			isa = PBXGroup;
+			children = (
+				FAADAF062C9B445E000009F9 /* Mocks */,
+				FAADAEF42C9B1F4C000009F9 /* ViewModel */,
+				FAADAEF32C9B16E9000009F9 /* View */,
+			);
+			path = UniteTest;
+			sourceTree = "<group>";
+		};
+		FAADAEF32C9B16E9000009F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAADAEF12C9B16E4000009F9 /* UnitTestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAADAEF42C9B1F4C000009F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAADAEF52C9B1F6C000009F9 /* UnitTestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAADAEFC2C9B2104000009F9 /* UnitTest_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FAADAEFD2C9B2104000009F9 /* UnitTest_Tests.swift */,
+				FAADAF042C9B226F000009F9 /* UnitTestViewModel_Test.swift */,
+				FAADAF092C9B49F6000009F9 /* NewMockDataServies_Test.swift */,
+			);
+			path = UnitTest_Tests;
+			sourceTree = "<group>";
+		};
+		FAADAF062C9B445E000009F9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FAADAF072C9B446E000009F9 /* NewMockDataServies.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +164,24 @@
 			productReference = FAADAEDF2C9B1127000009F9 /* UnitTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FAADAEFA2C9B2103000009F9 /* UnitTest_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAADAF012C9B2104000009F9 /* Build configuration list for PBXNativeTarget "UnitTest_Tests" */;
+			buildPhases = (
+				FAADAEF72C9B2103000009F9 /* Sources */,
+				FAADAEF82C9B2103000009F9 /* Frameworks */,
+				FAADAEF92C9B2103000009F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAADAF002C9B2104000009F9 /* PBXTargetDependency */,
+			);
+			name = UnitTest_Tests;
+			productName = UnitTest_Tests;
+			productReference = FAADAEFB2C9B2103000009F9 /* UnitTest_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +194,10 @@
 				TargetAttributes = {
 					FAADAEDE2C9B1127000009F9 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					FAADAEFA2C9B2103000009F9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FAADAEDE2C9B1127000009F9;
 					};
 				};
 			};
@@ -116,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				FAADAEDE2C9B1127000009F9 /* UnitTest */,
+				FAADAEFA2C9B2103000009F9 /* UnitTest_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +230,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAADAEF92C9B2103000009F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +246,31 @@
 			files = (
 				FAADAEE52C9B1127000009F9 /* ContentView.swift in Sources */,
 				FAADAEE32C9B1127000009F9 /* UnitTestApp.swift in Sources */,
+				FAADAF082C9B446E000009F9 /* NewMockDataServies.swift in Sources */,
+				FAADAEF62C9B1F6C000009F9 /* UnitTestViewModel.swift in Sources */,
+				FAADAEF22C9B16E4000009F9 /* UnitTestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADAEF72C9B2103000009F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAADAF052C9B226F000009F9 /* UnitTestViewModel_Test.swift in Sources */,
+				FAADAEFE2C9B2104000009F9 /* UnitTest_Tests.swift in Sources */,
+				FAADAF0A2C9B49F6000009F9 /* NewMockDataServies_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAADAF002C9B2104000009F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAADAEDE2C9B1127000009F9 /* UnitTest */;
+			targetProxy = FAADAEFF2C9B2104000009F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FAADAEEB2C9B1128000009F9 /* Debug */ = {
@@ -322,6 +450,42 @@
 			};
 			name = Release;
 		};
+		FAADAF022C9B2104000009F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9SL46C878;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farido.UnitTest-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UnitTest";
+			};
+			name = Debug;
+		};
+		FAADAF032C9B2104000009F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9SL46C878;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.farido.UnitTest-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UnitTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +503,15 @@
 			buildConfigurations = (
 				FAADAEEE2C9B1128000009F9 /* Debug */,
 				FAADAEEF2C9B1128000009F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAADAF012C9B2104000009F9 /* Build configuration list for PBXNativeTarget "UnitTest_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAADAF022C9B2104000009F9 /* Debug */,
+				FAADAF032C9B2104000009F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
